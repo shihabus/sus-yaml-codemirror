@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <style type="text/css" media="screen">
+    #editor {
+      position: absolute;
+      top: 100;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  </style>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ace.js"
+    integrity="sha512-6ts6Fu561/yzWvD6uwQp3XVYwiWNpWnZ0hdeQrETqtnQiGjTfOS06W76aUDnq51hl1SxXtJaqy7IsZ3oP/uZEg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/theme-monokai.min.js"
+    integrity="sha512-wZYGbdk0giM73l8BLDNfSEziApAmH8DvXey6zNLG3QUgDeDsMAPm3FIdjhLwrGOWO0vdVHkVxeUzOBR0Hc/xBA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/mode-yaml.min.js"
+    integrity="sha512-VUeuCa6fUR6uovoS+4zLs1st+YAh4MS3crFQGZxZQU2ePinr3LygtHPPEDxNcxnifSMbjLaOZTd5rKsAJ0vIPQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ext-language_tools.min.js"
+    integrity="sha512-S7Whi8oQAQu/MK6AhBWufIJIyOvqORj+/1YDM9MaHeRalsZjzyYS7Usk4fsh+6J77PUhuk5v/BxaMDXRdWd1KA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-</head>
-
-<body>
-  <div id="app"></div>
-  <script type="module" src="/main.js"></script>
-</body>
-
+  <body>
+    <div>Hello</div>
+    <div id="editor"></div>
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
